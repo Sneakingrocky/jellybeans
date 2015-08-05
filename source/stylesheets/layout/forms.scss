@@ -100,26 +100,52 @@
   }
 }
 
+.search {
+  background: $white;
+  border: none;
+  border-radius: 6px;
+  color: $primary-text-color;
+  display: inline-block;
+  font-weight: 200;
+  font-size: .7em;
+  padding: 10px;
+  width: 70%;
+
+  &:focus {
+    outline: 0;
+    border: 1px solid $teal;
+    border-radius: 6px;
+  }
+}
+
 /* ==========================================================================
    Sidebar form
    ========================================================================== */
 
 .filter-list {
+  background: #f9fafa;
+  border: 2px solid #edeff0;
 
   a {
-    background: #f9fafa;
     border-bottom: 1px solid #edeff0;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: .9em;
+    font-weight: 400;
     color: #7b8b8e;
     padding: 15px;
     display: block;
     position: relative;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s
+  }
+}
+
+.filter-list__hover {
+  background: #f9fafa;
+
+  &:hover {
+    background: $white;
+    border-bottom: 1px solid $teal;
+    padding: 15px;
   }
 }
 
