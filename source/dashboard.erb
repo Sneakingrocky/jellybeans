@@ -1,0 +1,135 @@
+<div class="container">
+  <div class="row">
+    <section class="column third align-center">
+      <img src="/images/EricaGarcia.png"/ class="profile-image--circle">
+      <h1 class="dashboard__name">Erica Garcia</h1><span><i class="fa fa-pencil"></i></span>
+      <p class="dashboard__sub-title">Mentor(s)</p>
+      <p class="dashboard__sub-detail">Nelsol Batalla & Malcolm Newsome</p><span><i class="fa fa-pencil"></i></span>
+    </section>
+
+    <section class="column third hide-for-small-only">
+      <h1 class="chart__title">Goal Stats</h1>
+      <ul>
+        <li>Total Goals Made <span class="right">100</span></li>
+        <li>Completed <span class="right">95</span></li>
+        <li>Completion Rate <span class="right">95%</span></li>
+        <li>Longest Streak <span class="right">2 Quarters</span></li>
+      </ul>
+    </section>
+
+    <article class="column third hide-for-small-only">
+      <h1 class="chart__title">Goal Categories</h1>
+
+      <div class="labeled-chart-container">
+        <div class="canvas-holder">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="row align-center margin-top--extra border-top">
+    <h1 class="dashboard__section-title">Quarterly Goals</h1>
+    <p class="dashboard__section-sub-title">Goals for Quarter 3, 2015</p>
+  </section>
+
+
+  <section class="row">
+
+    <div class="column third card">
+      <h1 class="card__label card__label--color1">Client Service</h1>
+      <div class="card__content">
+        <h2 class="card__section-title card__section--separated">Learn to be better manage clients</h2>
+
+        <div class="checkbox">
+          <label><input type="checkbox" />Lead an IPM</label>
+          <label><input type="checkbox" />Do a demo during an IPM</label>
+          <label><input type="checkbox" />Make the client laugh</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="column third card">
+      <h1 class="card__label card__label--color2 ">Coding</h1>
+      <div class="card__content">
+        <h2 class="card__section-title card__section--separated">Become more proficient in iOS development</h2>
+
+        <div class="checkbox">
+          <label><input type="checkbox" />Run through iOS course on Treehouse from start to finish</label>
+          <label><input type="checkbox" />Come up with an idea for an app</label>
+          <label><input type="checkbox" />Demo the app to my mentor and be able to answer technical qusetions</label>
+          <label><input type="checkbox" />Run through iOS course on Treehouse from start to finish</label>
+          <label><input type="checkbox" />Come up with an idea for an app</label>
+          <label><input type="checkbox" />Demo the app to my mentor and be able to answer technical questions</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="column third card">
+      <h1 class="card__label card__label--color3">Mentoring</h1>
+      <div class="card__content">
+        <h2 class="card__section-title card__section--separated">Become comfortable with the idea of taking on a Resident apprentice</h2>
+
+        <div class="checkbox">
+          <label><input type="checkbox" />Mentor at Code and Coffee</label>
+          <label><input type="checkbox" />Pair with a student apprentice</label>
+          <label><input type="checkbox" />Ask three people advice on how to best prepare to be a resident mentor</label>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="row">
+    <h1 class="align-center">Mentoring</h1>
+  </section>
+
+  <section class="row">
+
+    <div class="column third card">
+
+      <h1 class="card__label card__label--light">Maverick</h1>
+
+      <div class="card__content">
+        <div class="card__section--separated align-center">
+          <p class="card__section-title">Quarterly Goal progress</p>
+          <p class="progress-bar__number">60% complete</p>
+          <div class="progress-bar">
+            <div class="progress-bar__progress" style="width: 60%;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row margin-top">
+          <%= link_to "Profile", "/dashboard.html", :class => 'btn btn-secondary full-width' %>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="column third card">
+
+      <h1 class="card__label card__label--light">Theo</h1>
+
+      <div class="card__content">
+        <div class="card__section--separated align-center">
+          <p class="card__section-title">Quarterly Goal progress</p>
+          <p class="progress-bar__number">20% complete</p>
+          <div class="progress-bar">
+            <div class="progress-bar__progress" style="width: 20%;">
+            </div>
+          </div>
+        </div>
+
+        <div class="row margin-top">
+          <%= link_to "Profile", "/dashboard.html", :class => 'btn btn-secondary full-width' %>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  </div>
+</div>

@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Layout Base Styles
+   ========================================================================== */
+
+.body--with-nav {
+  padding-top: 150px;
+}
+
+
+.hero {
+  background: url(image_path('jellybeans.png')) no-repeat center;
+  background-size: cover;
+  display: block;
+  height: calc(100vh - 0px);
+  min-height: 400px;
+  position: relative;
+  max-width: 100%;
+}
+
+.head {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+ }
+
+.head__main-title {
+  color: $white;
+  font-family: "corner-store",sans-serif;
+  font-size: 7em;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.head__sub-title {
+  color: $white;
+  font-size: 2em;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.profile-image--circle {
+  border: 5px solid white;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  margin: 0 auto;
+  width: 200px;
+}
+
+
+
+
+
+

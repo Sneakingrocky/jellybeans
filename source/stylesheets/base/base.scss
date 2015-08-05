@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+body {
+  box-sizing: border-box;
+  color: $primary-text-color;
+  font-size: 16px;
+  font-family: "lato",sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-link-color;
+
+  &:hover {
+    color: $primary-link-color--darker;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+

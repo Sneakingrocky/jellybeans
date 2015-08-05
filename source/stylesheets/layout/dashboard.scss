@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Dashboard Styles
+   ========================================================================== */
+
+.dashboard__name {
+  display: inline-block;
+  font-size: 1.6em;
+  font-weight: 200;
+  margin-top: 5px;
+  padding-right: 10px;
+}
+
+.dashboard__sub-title {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.dashboard__sub-detail {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 200;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.dashboard__section-title {
+  margin-bottom: 0;
+}
+
+
+.dashboard__section-sub-title {
+  margin-top: 0;
+}
+
+
+.dashboard__body {
+  background-color: #FBFBFB;
+}

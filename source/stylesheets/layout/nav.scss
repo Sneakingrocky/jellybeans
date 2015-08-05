@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Primary Nav
+   ========================================================================== */
+
+.top-bar {
+  @extend %clearfix;
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  padding: 10px 0;
+  width: 100%;
+  z-index: 10;
+
+  .container {
+    padding: 0;
+  }
+
+  ul {
+    @extend %clearfix;
+
+    li {
+      float: left;
+      list-style: none;
+      position: relative;
+    }
+  }
+
+}
+
+
+.top-bar__logo {
+  margin: 0;
+  padding: 0;
+  float: left;
+
+  a {
+    color: $primary-link-color;
+    font-family: "corner-store",sans-serif;
+    font-size: 1.2em;
+  }
+}
+
+.nav__links {
+  color: #999999;
+  display: block;
+  font-size: 1em;
+  line-height: 45px;
+  padding: 0 1em;
+
+  &:hover {
+    color: $primary-link-color;
+  }
+}
+
+.nav__gravatar--circle {
+  border-radius: 50%;
+  height: 30px;
+  margin: 7px;
+  width: 30px;
+}
+
+.mobile-menu {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.mobile-menu__icon {
+  font-size: 2.2em;
+  padding-left: 15px;
+}
+
+

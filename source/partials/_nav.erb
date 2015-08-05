@@ -1,0 +1,44 @@
+<nav class="top-bar">
+  <div class="container">
+
+    <h1 class="top-bar__logo">
+      <%= link_to "Jellybeans", "/dashboard.html" %>
+    </h1>
+
+    <section class="right">
+      <ul class="hide-for-small-only">
+        <li>
+          <%= link_to "+ Add Goal", "/dashboard.html", :class => 'btn btn-secondary ' %>
+        </li>
+
+        <li>
+          <%= link_to "Activity", "/activity.html", :class => 'nav__links' %>
+        </li>
+
+        <li>
+          <%= link_to "Sign Out", "/index.html", :class => 'nav__links' %>
+        </li>
+
+        <li>
+          <img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />
+        </li>
+      </ul>
+
+      <ul class="show-for-small-only">
+        <li class="show-for-small-only">
+          <a class="mobile-menu mobile-menu__icon" href="#">
+            <i class="fa fa-plus"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="mobile-menu mobile-menu__icon" href="#">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+
+    </section>
+
+  </div>
+</nav>

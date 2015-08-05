@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+// Medium screens
+$medium: "(min-width: 800px)";
+
+// Large screens
+$large: "(min-width: 1024px)";
+
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 1.5em 0;
+  width: 90%;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+  @extend .clearfix;
+}
+
+@mixin column {
+  float: left;
+  margin-left: 4%;
+
+  &:first-child { margin-left: 0; }
+
+  &.half { width: 48%; }
+  &.third { width: 30.6%; }
+  &.fourth { width: 22%; }
+  &.fifth { width: 16.8%; }
+  &.two-thirds { width: 65.4%; }
+}
+
+.column {
+  @media #{$medium} {
+    @include column;
+  }
+}
+.row.no-collapse > .column {
+  @include column;
+}

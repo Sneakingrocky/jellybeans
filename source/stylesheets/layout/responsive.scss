@@ -1,0 +1,21 @@
+.hide-for-small-only {
+  display: none;
+
+  @media #{$medium} {
+    display: block;
+  }
+}
+
+.show-for-small-only {
+  @media #{$medium} {
+    display: none;
+  }
+}
+
+.show-for-large-up {
+  display: none;
+
+  @media #{$large} {
+    display: block;
+  }
+}

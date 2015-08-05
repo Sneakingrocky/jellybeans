@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.form-container {
+  background: $primary-background;
+  margin: 50px auto;
+  padding: 17px 30px 40px;
+  position: relative;
+  max-width: 440px;
+  z-index: 10;
+}
+
+.login-registration-form {
+  input, select, textarea {
+    border: 1px solid $primary-border-color;
+    box-shadow: none;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 14px 35px 14px 21px;
+  }
+
+  label,
+  input[type=submit] {
+    margin-bottom: 27px;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=submit],
+  input[type=tel],
+  textarea,
+  select {
+    width: 100%;
+  }
+
+  input[type=checkbox] {
+    float: left;
+    margin-right: 10px;
+  }
+
+  select {
+    background: $white;
+    height: 34px;
+  }
+
+  textarea {
+    height: 78px;
+  }
+}
+
+.field_with_errors {
+  input {
+    border-color: $error-color;
+    box-shadow: 0 0 5px $error-color;
+  }
+}
+
+.error-list {
+  list-style:none;
+  padding: 0;
+
+  .error {
+    margin-bottom: 10px;
+    color: $error-color;
+  }
+}
+
+.input-error {
+  padding: 20px;
+  width: 100%;
+  background: #FCD4D4;
+  border: 1px solid $error-color;
+  color: $error-color;
+}
+
+.checkbox {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+  label {
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0;
+    max-width: 100%;
+    min-height: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  input[type=checkbox] {
+    margin-top: 4px;
+    margin-left: -20px;
+    position: absolute;
+  }
+}
+
+/* ==========================================================================
+   Sidebar form
+   ========================================================================== */
+
+.filter-list {
+
+  a {
+    background: #f9fafa;
+    border-bottom: 1px solid #edeff0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7b8b8e;
+    padding: 15px;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s
+  }
+}
+
+.filter-name {
+  font-size: 1.5em;
+  font-weight: 200;
+  margin: 0 0 5px 0;
+}
