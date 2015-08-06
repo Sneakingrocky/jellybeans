@@ -17,7 +17,7 @@ Jellybeans
 
 <code>$bundle install</code>
 
-**This project runs on Middleman**
+**This project runs on Middleman:**
 <a href="https://middlemanapp.com/basics/install/">Installing Middleman</a>
 
 **You'll need to run Middleman's server command in your terminal:**
