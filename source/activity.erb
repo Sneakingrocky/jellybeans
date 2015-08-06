@@ -19,22 +19,10 @@
 
           <div class="scroll-bar">
             <ul class="filter-list">
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Axus</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Beastie Boy</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Chicago</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Darth Vader</a></li>
-              <%= link_to "Erica Garcia", "/dashboard.html", :class => 'filter-list__hover'  %>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />London</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Nelsol Batalla</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Maverick</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Oprah</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Pooh Bear</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Rusty Smith</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Sarah Marshall</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Tina Fe</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Vivian Jones</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Walter White</a></li>
-              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Yaya Binx</a></li>
+              <li><a class="filter-list__hover" href="/team.html"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Axus</a></li>
+              <% ["Beastie Boy", "Chicago", "Darth Vader", "London", "Nelsol Batalla", "Maverick", "Oprah", "Pooh Bear", "Rusty Smith", "Sarah Marshall", "Tina Fe", "Vivian Jones", "Walter White", "Yaya Binx"].each do |name| %>
+                <li><a class="filter-list__hover" href="/dashboard.html"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" /><%= name %></a></li>
+              <% end %>
             </ul>
           </div>
         </div>
