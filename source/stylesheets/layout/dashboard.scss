@@ -37,3 +37,15 @@
 .dashboard__body {
   background-color: #FBFBFB;
 }
+
+.view-more-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+
+  @media #{$medium} {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+  }
+}
