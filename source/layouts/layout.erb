@@ -14,9 +14,12 @@
     <%= stylesheet_link_tag "application" %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
+
   <body class="<%= page_classes %> body--with-nav dashboard__body ">
     <%= partial "partials/nav" %>
     <%= yield %>
+
+    <%= partial("partials/modal", locals: {id: "add_goal_modal", partial: "partials/modals/add_goal", title: "Add Goal"}) %>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <%= javascript_include_tag  "all" %>

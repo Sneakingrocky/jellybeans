@@ -1,35 +1,42 @@
 <section class="container">
   <div class="row">
 
-    <section class="card column third">
-      <form class="card__label card__label--light">
-        <input type="search" placeholder="Search" class="search">
-        <button class="btn__search"><i class="fa fa-search"></i></button>
-      </form>
+    <section class="column third">
+      <a href="#add_team_modal" class="btn btn-primary full-width margin-bottom" data-modal>
+        <i class="fa fa-plus"></i>
+        Add Team
+      </a>
 
-      <div class=" card__content">
+      <div class="card">
+        <form class="card__label card__label--light">
+          <input type="search" placeholder="Search" class="search">
+          <button class="btn__search"><i class="fa fa-search"></i></button>
+        </form>
 
-        <h4 class="filter-name align-center">Teammates  &amp; Teams</h4>
+        <div class=" card__content">
 
-        <div class="scroll-bar">
-          <ul class="filter-list">
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Axus</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Beastie Boy</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Chicago</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Darth Vader</a></li>
-            <%= link_to "Erica Garcia", "/dashboard.html", :class => 'filter-list__hover'  %>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />London</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Nelsol Batalla</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Maverick</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Oprah</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Pooh Bear</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Rusty Smith</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Sarah Marshall</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Tina Fe</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Vivian Jones</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Walter White</a></li>
-            <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Yaya Binx</a></li>
-          </ul>
+          <h4 class="filter-name align-center">Teammates  &amp; Teams</h4>
+
+          <div class="scroll-bar">
+            <ul class="filter-list">
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Axus</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Beastie Boy</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Chicago</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Darth Vader</a></li>
+              <%= link_to "Erica Garcia", "/dashboard.html", :class => 'filter-list__hover'  %>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />London</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Nelsol Batalla</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Maverick</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Oprah</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Pooh Bear</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Rusty Smith</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Sarah Marshall</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Tina Fe</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Vivian Jones</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Walter White</a></li>
+              <li><a class="filter-list__hover"><img src="/images/EricaGarcia.png"/ class="nav__gravatar--circle" />Yaya Binx</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -66,3 +73,5 @@
 
   </div>
 </section>
+
+<%= partial("partials/modal", locals: {id: "add_team_modal", partial: "partials/modals/add_team", title: "Add Team"}) %>

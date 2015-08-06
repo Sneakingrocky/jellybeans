@@ -19,11 +19,13 @@ var data = [
     }
 ];
 
-var canvas = document.getElementById("myChart");
-var ctx = canvas.getContext("2d");
-var myDoughnutChart = new Chart(ctx).Doughnut(data, {responsive: true});
+var $canvas = $("#myChart");
+if ($canvas.length > 0) {
+  var ctx = $canvas.get(0).getContext("2d");
+  var myDoughnutChart = new Chart(ctx).Doughnut(data, {responsive: true});
 
-var legend = myDoughnutChart.generateLegend();
-var legendHolder = document.createElement("div");
-legendHolder.innerHTML = legend;
-canvas.parentNode.parentNode.appendChild(legendHolder.firstChild);
+  var legend = myDoughnutChart.generateLegend();
+  var legendHolder = document.createElement("div");
+  legendHolder.innerHTML = legend;
+  $canvas.get(0).parentNode.parentNode.appendChild(legendHolder.firstChild);
+}
