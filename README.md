@@ -24,6 +24,13 @@ Jellybeans
 
 <code>$middleman server</code>
 
+**This project also has some javascript**
+<p>Be sure to have it enabled in your settings</p>
+<a href="http://www.chartjs.org/">Chartjs</a>
+<a href="https://typekit.com/fonts">Typekit</a>
+<a href="http://leanmodal.finelysliced.com.au/">leanModal.js</a>
+
+
 **Lastly, view the project in your browser:**
 
 <code>localhost:4567</code>
