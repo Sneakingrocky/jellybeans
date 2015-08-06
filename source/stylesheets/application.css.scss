@@ -4,10 +4,6 @@
 @import "base/colors";
 @import "base/base";
 
-
-@import "modules/cards";
-@import "modules/news_feed";
-
 @import "layout/nav";
 @import "layout/grid";
 @import "layout/responsive";
@@ -15,6 +11,10 @@
 @import "layout/forms";
 @import "layout/tables";
 @import "layout/dashboard";
+
+@import "modules/cards";
+@import "modules/news_feed";
+@import "modules/modals";
 
 @import "components/btn";
 @import "components/progress_bar";

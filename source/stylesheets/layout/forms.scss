@@ -2,53 +2,68 @@
    Forms
    ========================================================================== */
 
-.form-container {
-  background: $primary-background;
-  margin: 50px auto;
-  padding: 17px 30px 40px;
-  position: relative;
-  max-width: 440px;
-  z-index: 10;
-}
-
-.login-registration-form {
-  input, select, textarea {
+.form {
+  .input {
     border: 1px solid $primary-border-color;
     box-shadow: none;
     display: block;
+    height: 45px;
     margin-bottom: 20px;
     margin-top: 5px;
     padding: 14px 35px 14px 21px;
   }
 
-  label,
-  input[type=submit] {
-    margin-bottom: 27px;
+  .input:focus {
+    border-color: $teal;
   }
 
-  input[type=text],
-  input[type=email],
-  input[type=password],
-  input[type=submit],
-  input[type=tel],
-  textarea,
-  select {
+  textarea.input {
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  .input--wide {
     width: 100%;
   }
 
-  input[type=checkbox] {
-    float: left;
-    margin-right: 10px;
+  *:focus {
+    outline: none;
   }
 
-  select {
-    background: $white;
-    height: 34px;
+  .input__container {
+    position: relative;
   }
 
-  textarea {
-    height: 78px;
+  .input--prepended {
+    padding-left: 30px;
   }
+
+  .input--appended {
+    padding-right: 30px;
+  }
+
+  .input__prepend {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .input__append {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.form__section-header {
+  font-size: 1.15em;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.form__actions {
+  margin-top: 30px;
 }
 
 .field_with_errors {

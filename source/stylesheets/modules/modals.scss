@@ -1,0 +1,51 @@
+#lean_overlay {
+  position: fixed;
+  z-index:100;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+  background: #000;
+  display: none;
+}
+
+.modal {
+  display: none;
+  background: $white;
+  width: 600px;
+}
+
+.modal__title {
+  background: $teal;
+  color: $white;
+  padding: 20px;
+  font-size: 1.3em;
+  font-weight: 200;
+  text-align: center;
+}
+
+.modal__body {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 140px);
+}
+
+.modal__close {
+  color: $white;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  &:hover {
+    color: black;
+  }
+}
+
+@media #{$small} {
+  .modal {
+    width: 100%;
+    left: 0 !important;
+    margin-left: 0 !important;
+  }
+}

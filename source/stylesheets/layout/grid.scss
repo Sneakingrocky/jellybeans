@@ -2,6 +2,9 @@
    Grid
    ========================================================================== */
 
+// Small screens
+$small: "(max-width: 799px)";
+
 // Medium screens
 $medium: "(min-width: 800px)";
 
@@ -48,4 +51,10 @@ $large: "(min-width: 1024px)";
 }
 .row.no-collapse > .column {
   @include column;
+}
+
+@media #{$small} {
+  .column {
+    margin-bottom: 15px;
+  }
 }
