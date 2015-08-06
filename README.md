@@ -11,16 +11,16 @@ Jellybeans
 <h1>What this app was NOT made to do:</h1>
 <p>Produce any real jellybeans</p>
 
-<h4>Check me out by:</h4>
+<h1>Check me out by:</h1>
 
-<h3>Bundle install in your terminal please:</h3>
+**Bundle install in your terminal please:**
 
 <code>$bundle install</code>
 
-<h3>This project runs on Middleman so you'll need to run Middleman's server command in your terminal:</h3>
+**This project runs on Middleman so you'll need to run Middleman's server command in your terminal:**
 
 <code>$middleman server</code>
 
-<h3>Lastly, view the project in your browser:</h3>
+**Lastly, view the project in your browser:**
 
 <code>localhost:4567</code>
