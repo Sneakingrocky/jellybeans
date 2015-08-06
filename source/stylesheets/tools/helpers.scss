@@ -49,6 +49,10 @@
   margin-bottom: 10px;
 }
 
+.margin-bottom--extra {
+  margin-bottom: 30px;
+}
+
 .full-width {
   width: 100%;
 }
@@ -56,4 +60,8 @@
 .scroll-bar {
   height: 400px;
   overflow-y: scroll;
+}
+
+.hidden {
+  display: none;
 }
