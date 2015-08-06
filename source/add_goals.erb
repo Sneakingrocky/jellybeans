@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <section class="column third align-center">
+      <img src="/images/EricaGarcia.png"/ class="profile-image--circle">
+      <h1 class="dashboard__name">Erica Garcia</h1><span><i class="fa fa-pencil"></i></span>
+      <p class="dashboard__sub-title">Mentor(s)</p>
+      <p class="dashboard__sub-detail">Nelsol Batalla & Malcolm Newsome</p><span><i class="fa fa-pencil"></i></span>
+    </section>
+
+    <section class="column third hide-for-small-only">
+      <h1 class="chart__title">Goal Stats</h1>
+      <ul>
+        <li>Total Goals Made <span class="right">0</span></li>
+        <li>Completed <span class="right">0</span></li>
+        <li>Completion Rate <span class="right">0</span></li>
+        <li>Longest Streak <span class="right">0</span></li>
+      </ul>
+    </section>
+
+    <article class="column third hide-for-small-only">
+      <h1 class="chart__title">Goal Categories</h1>
+    </article>
+
+  </div>
+
+  <section class="row align-center margin-top--extra border-top">
+    <h1 class="dashboard__section-title">Quarterly Goals</h1>
+    <p class="dashboard__section-sub-title">Goals for Quarter 3, 2015</p>
+  </section>
+
+
+  <section class="placeholder-panel">
+    <p>Hey! Looks like you don't have any goals for this quarter yet :(</p>
+    <%= link_to "+ Add Goal", "#add_goal_modal", class: 'btn btn-secondary ', data: {modal: true} %>
+  </section>
+
+  <section>
+    <h1 class="align-center">Mentoring</h1>
+  </section>
+
+  <section class="placeholder-panel">
+    <p>You're not mentoring anyone yet. Maybe you should look for someone! If you already have a mentee, be sure that they add you as a mentor =)</p>
+  </section>
+
+  </div>
+</div>
+
+<a href="#add_goal_modal" class="hidden" data-auto-modal data-modal></a>
